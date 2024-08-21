@@ -28,8 +28,8 @@ function App() {
         <p>Boolean Value: {demo3}</p>
         <p>Calling a function: {sum()}</p>
         {/* rendering array */}
-        {numbers.map((num)=> 
-         <h2>{num}</h2>
+        {numbers.map((num, index)=> 
+         <h2 key={index}>{num}</h2>
         )}
 
          {/* rendering object */}
