@@ -18,6 +18,9 @@
 
 // using jsx in react
 
-const jsxHeading = (<h1>Hello World</h1>);
+const jsxHeading = <>
+<h1>Hello World</h1>
+<p>About React</p>
+</>;
 ReactDOM.createRoot(document.getElementById("root")).render(jsxHeading);
 
