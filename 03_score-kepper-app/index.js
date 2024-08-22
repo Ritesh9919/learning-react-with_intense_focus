@@ -50,6 +50,16 @@ const Result = () => {
   );
 };
 
+const Form = () => {
+  return (
+    <from>
+      <input />
+      <input />
+      <button>Submit</button>
+    </from>
+  );
+};
+
 const App = () => {
   return (
     <>
@@ -58,7 +68,9 @@ const App = () => {
         SCORE : {score}/{wicket}
       </h2>
       <ScoreButtons />
-      <Result />
+      <br />
+      <Form />
+      <hr />
     </>
   );
 };
