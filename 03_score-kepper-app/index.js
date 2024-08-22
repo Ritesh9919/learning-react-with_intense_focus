@@ -36,6 +36,20 @@ const ScoreButtons = () => {
   );
 };
 
+const Result = () => {
+  return (
+    <div>
+      {ballWiseResult.map((res, index) => (
+        <>
+          {index % 6 == 0 ? <br /> : null}
+          <span key={index}>{res == 0 ? <strong>.</strong> : res}</span>
+          &nbsp;&nbsp;&nbsp;
+        </>
+      ))}
+    </div>
+  );
+};
+
 const App = () => {
   return (
     <>
@@ -43,7 +57,8 @@ const App = () => {
       <h2>
         SCORE : {score}/{wicket}
       </h2>
-      <ScoreButtons addScore={addScore} addWicket={addWicket} />
+      <ScoreButtons />
+      <Result />
     </>
   );
 };
