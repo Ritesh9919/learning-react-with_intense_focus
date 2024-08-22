@@ -1,6 +1,7 @@
 
 
 
+
 function Student() {
     const students = [
         {
@@ -46,5 +47,64 @@ function Student() {
 }
 
 
+function Car() {
+    const cars = [
+        {
+            img:"https://images.pexels.com/photos/35967/mini-cooper-auto-model-vehicle.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            name:"Audi",
+            avaerage:12
+        },
+        {
+            img:"https://images.pexels.com/photos/35967/mini-cooper-auto-model-vehicle.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            name:"Nexa",
+            avaerage:15
+        },
+        {
+            img:"https://images.pexels.com/photos/35967/mini-cooper-auto-model-vehicle.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            name:"Toyota",
+            avaerage:20
+        }
 
-ReactDOM.createRoot(document.getElementById("root")).render(<Student/>)
+    ]
+    return (
+        <>
+         <table border="2">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Average</th>
+                </tr>
+            </thead>
+            <tbody>
+                {cars.map((car, index)=> 
+             <tr key={index}>
+                <td><img src={car.img}/></td>
+                <td>{car.name}</td>
+                <td>{car.avaerage}</td>
+            </tr>
+                )}
+
+            </tbody>
+         </table>
+        </>
+    )
+}
+
+
+
+function App() {
+    let showCars = false;
+    if(showCars) {
+        return <Car/>
+    }
+    return (
+        <>
+        <Student/>
+        </>
+    )
+}
+
+
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App/>)
