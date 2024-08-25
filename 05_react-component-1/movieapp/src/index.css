@@ -46,6 +46,7 @@ body {
   padding: 5px 10px;
   border-radius: 2px;
   font-family: monospace;
+  cursor: pointer;
 }
 
 .buttons .fav-btn {
@@ -54,4 +55,9 @@ body {
 
 .buttons .buy-btn {
   background-color: rgb(40, 40, 120);
+}
+
+.bottom .star img {
+  width: 15px;
+  cursor: pointer;
 }
