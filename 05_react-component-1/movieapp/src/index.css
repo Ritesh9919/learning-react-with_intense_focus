@@ -53,8 +53,26 @@ body {
   cursor: pointer;
 }
 
-.btn-buy {
+.btn-add-to-cart {
   background-color: rgb(20, 20, 97);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-remove-to-cart {
+  background-color: rgb(219, 46, 55);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-unfav {
+  background-color: rgb(219, 46, 55);
   border: none;
   padding: 10px 15px;
   border-radius: 2px;
