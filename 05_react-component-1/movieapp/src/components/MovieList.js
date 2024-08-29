@@ -91,8 +91,7 @@ class MovieList extends Component {
   render() {
     console.log(this.state.movies);
     return (
-      <div>
-        <h1>Movie App</h1>
+      <div className="movieList">
         {this.state.movies.map((movie, index) => (
           <MovieCard
             movie={movie}

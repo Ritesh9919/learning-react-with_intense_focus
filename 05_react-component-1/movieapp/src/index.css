@@ -6,6 +6,72 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(241, 240, 240);
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 145, 255);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header img {
+  width: 50px;
+  position: relative;
+}
+
+.count {
+  position: absolute;
+  top: 10px;
+  right: 35px;
+  font-size: 20px;
+}
+
+.logo {
+  margin-left: 30px;
+  font-family: sans-serif;
+}
+
+.design {
+  animation-name: change-color;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes change-color {
+  0% {
+    color: blue;
+  }
+  20% {
+    color: pink;
+  }
+  50% {
+    color: burlywood;
+  }
+  70% {
+    color: cyan;
+  }
+
+  90% {
+    color: chocolate;
+  }
+
+  100% {
+    color: green;
+  }
+}
+
+.cart {
+  margin-right: 50px;
+}
+
+.movieList {
+  padding: 50px 0;
 }
 
 .movie-card {
