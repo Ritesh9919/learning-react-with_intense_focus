@@ -43,6 +43,7 @@ class App extends React.Component {
           cart: false,
         },
       ],
+      cartCount: 0,
     };
   }
 
@@ -85,13 +86,16 @@ class App extends React.Component {
     movies[mid].cart = !movies[mid].cart;
     this.setState({
       movies: movies,
+      cartCount: movies[mid].cart
+        ? this.state.cartCount + 1
+        : this.state.cartCount - 1,
     });
   };
 
   render() {
     return (
       <div className="App">
-        <Navbar />
+        <Navbar cartCount={this.state.cartCount} />
         <MovieList
           movies={this.state.movies}
           addStar={this.addStar}

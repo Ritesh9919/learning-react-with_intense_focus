@@ -1,4 +1,4 @@
-const Navbar = () => {
+const Navbar = ({ cartCount }) => {
   return (
     <header>
       <div className="logo">
@@ -13,7 +13,7 @@ const Navbar = () => {
             alt="cart image"
           />
         </div>
-        <span className="count">0</span>
+        <span className="count">{cartCount}</span>
       </div>
     </header>
   );
