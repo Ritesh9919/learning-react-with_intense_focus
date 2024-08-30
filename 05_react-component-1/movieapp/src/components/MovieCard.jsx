@@ -2,7 +2,7 @@ import { Component } from "react";
 
 class MovieCard extends Component {
   render() {
-    const { title, plot, price, rating, star, fav, cart, poster, index } =
+    const { title, plot, price, rating, star, fav, cart, poster } =
       this.props.movie;
     const { addStar, decStar, toggleCart, toggleFav } = this.props;
     return (
